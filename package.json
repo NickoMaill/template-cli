@@ -1,0 +1,27 @@
+{
+  "name": "template-cli",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "template-cli": "chmod +x ./scripts/basicExpressPackages.sh && ./index.js && ./scripts/basicExpressPackages.sh"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.21.3",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.5"
+  },
+  "dependencies": {
+    "inquirer": "^9.1.5",
+    "ora": "^6.2.0"
+  }
+}

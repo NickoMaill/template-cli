@@ -1,0 +1,32 @@
+{
+  "name": "basicexpressserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=development nodemon",
+    "build": "chmod + ./buildCommand.sh && ./buildCommand.sh",
+    "docker": "docker-compose --env-file .env.development.local up -d",
+    "start": "node dist/index.js",
+    "pretty": "prettier --write \"**/*.{json,ts,tsx,scss,yml}\""
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+},
+"keywords": [
+  "server",
+  "http",
+  "https",
+  "html",
+  "database",
+  "index",
+  "javascript",
+  "typescript",
+  "express",
+  "nodejs"
+],
+  "author": "",
+  "license": "ISC"
+}
