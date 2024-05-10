@@ -1,0 +1,23 @@
+{
+    "name": "zaza",
+    "private": true,
+    "version": "1.0.0",
+    "description": "",
+    "type": "module",
+    "repository": {
+        "type": "",
+        "url": ""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development npm run format && npm run lint && vite --port 3000",
+        "dev:expose": "cross-env NODE_ENV=development npm run format && npm run lint && vite --port 3000 --host",
+        "build": "tsc && vite build",
+        "lint": "tsc && eslint . --ext ts,tsx --report-unused-disable-directives",
+        "preview": "vite preview",
+        "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
+        "start": "serve -l 3001 -s dist"
+    }
+}
